@@ -31,3 +31,24 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.head-top {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: var(--gold);
+  border-radius: 50%;
+  top: -10px;
+  border: 2px solid var(--dark); 
+}
+
+.head {
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  background: var(--prim);
+  border-radius: 64px 64px 56px 56px;
+  border: 2px solid var(--dark);
+  top: 16px;
+  z-index: 5;
+}
