@@ -46,9 +46,51 @@ body {
   position: absolute;
   width: 144px;
   height: 144px;
-  background: var(--prim);
+  background: var(--gold);
   border-radius: 64px 64px 56px 56px;
   border: 2px solid var(--dark);
   top: 16px;
   z-index: 5;
+}
+
+.face {
+  position: absolute;
+  width: 112px;
+  height: 112px;
+  background: var(--prim);
+  border-radius: 48px;
+  border: 2px solid var(--dark);
+  top: 32px;
+  z-index: 5;
+}
+
+.face:before,
+.face:after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 48px;
+  background: var(--dark);
+  top: 32px;
+  animation: eyes 3s 2s ease infinite;
+}
+
+@keyframes eyes {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.2);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.face:before {
+  left: 30px;
+}
+
+.face:after {
+  left: 76px;
 }
