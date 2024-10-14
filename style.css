@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+:root {
+  --prim: #ff4500;
+  --dark: #111;
+  --blue: #139dd3;
+  --gold: #ffd700;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -14,4 +21,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
 }
